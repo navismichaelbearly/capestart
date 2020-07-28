@@ -1,0 +1,8 @@
+.button-container {
+  border-color: darkSalmon;
+  background-color: white;
+  color: darkSalmon;
+  border-radius: 5px;
+  padding: 10px 20px;
+  outline: none;
+}

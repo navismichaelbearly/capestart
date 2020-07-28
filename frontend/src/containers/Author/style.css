@@ -1,0 +1,35 @@
+.author-container {
+  padding: 30px;
+  margin: 0 auto 0 auto;
+  flex-direction: row;
+  display: flex;
+  flex: 1;
+}
+
+.author-img {
+  align-self: center;
+  object-fit: cover;
+  border-radius: 150px;
+  height: 300px;
+  width: 300px;
+  margin: 30px;
+}
+
+.author-column {
+  flex: 1;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.author-book {
+  flex: 1.5;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.author-card {
+  flex: none;
+}
