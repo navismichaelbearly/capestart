@@ -7,4 +7,6 @@ urlpatterns = [
     url(r'^api/author_list$', views.author_list),
     url(r'^api/book/create$', views.create_book),
     url(r'^api/author/create$', views.create_author),
+    url(r'^api/view_book/(?P<book_id>\d+)$', views.view_book),
+    url(r'^api/view_author/(?P<author_id>\d+)$', views.view_author),
 ]

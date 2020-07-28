@@ -43,3 +43,15 @@ def create_author(request):
         authorserializer.save()
         return JsonResponse(authorserializer.data, status=status.HTTP_201_CREATED)
     return JsonResponse(authorserializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+@api_view(['GET'])
+def view_book(request, book_id):
+    books = Book.objects.get(id=book_id),
+    bookserializer = BookSerializer(books, many=True)
+    return JsonResponse(bookserializer.data, status=200, safe=False)
+
+@api_view(['GET'])
+def view_author(request, author_id):
+    authors = Author.objects.get(id=author_id)
+    authorserializer = AuthorSerializer(authors, many=True)
+    return JsonResponse(authorserializer.data, status=200, safe=False)
